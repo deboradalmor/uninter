@@ -1,0 +1,89 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Barra do header */
+header {
+    width: 100%;
+    background-color: #e9151579; /* Cor de fundo rosa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Ajuste a altura conforme necessário */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo {
+    text-align: center;
+    margin: 20px;
+}
+
+.photo img {
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.description p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}

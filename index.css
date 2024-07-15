@@ -1,0 +1,89 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Barra do header */
+header {
+    width: 100%;
+    background-color: #e9151579; /* Cor de fundo rosa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Ajuste a altura conforme necessário */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.texto h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.texto p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.foto {
+    flex: 1;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
